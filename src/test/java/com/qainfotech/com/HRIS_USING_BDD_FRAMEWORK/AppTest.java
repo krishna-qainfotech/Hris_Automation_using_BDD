@@ -1,38 +1,20 @@
 package com.qainfotech.com.HRIS_USING_BDD_FRAMEWORK;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+ 
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features ="/home/qainfotech/eclipse-workspace/HRIS_USING_BDD_FRAMEWORK/src/test/java/Feature/Hris.feature"
+		,glue={"StepDefination"}
+		)
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+public class AppTest{
+
 }
