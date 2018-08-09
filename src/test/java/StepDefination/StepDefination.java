@@ -40,7 +40,7 @@ public void user_name_and_password_is_Entered() throws Throwable {
 	driver.findElement(By.id("txtUserName")).clear();
     driver.findElement(By.id("txtUserName")).sendKeys("Krishnachauhan");
     driver.findElement(By.id("txtPassword")).clear();
-    driver.findElement(By.id("txtPassword")).sendKeys("Krishna@1994");
+    driver.findElement(By.id("txtPassword")).sendKeys("Krishna@321#");
     
 }
 
@@ -102,7 +102,7 @@ driver.get("http://webmail.qainfotech.com");
 driver.findElement(By.id("username")).clear();
 driver.findElement(By.id("username")).sendKeys("Krishnachauhan");
 driver.findElement(By.id("password")).clear();
-driver.findElement(By.id("password")).sendKeys("Krishna@123#");;
+driver.findElement(By.id("password")).sendKeys("Krishna@1994");;
 driver.findElement(By.id("password")).submit();
 Thread.sleep(1000);
 
