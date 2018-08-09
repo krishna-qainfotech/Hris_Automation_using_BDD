@@ -40,7 +40,7 @@ public void user_name_and_password_is_Entered() throws Throwable {
 	driver.findElement(By.id("txtUserName")).clear();
     driver.findElement(By.id("txtUserName")).sendKeys("Krishnachauhan");
     driver.findElement(By.id("txtPassword")).clear();
-    driver.findElement(By.id("txtPassword")).sendKeys("Krishna@321#");
+    driver.findElement(By.id("txtPassword")).sendKeys("Krishna@1994");
     
 }
 
@@ -124,7 +124,7 @@ while ((st = br.readLine()) != null)
 
 driver.findElement(By.cssSelector("#tinymce")).sendKeys(str);
 driver.switchTo().defaultContent();
-driver.findElement(By.cssSelector("#zb__COMPOSE-2__SEND_left_icon")).click();
+//driver.findElement(By.cssSelector("#zb__COMPOSE-2__SEND_left_icon")).click();
 }
 
 @Then("^click on backlog create task$")
